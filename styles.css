@@ -170,3 +170,48 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+/* Games section */
+
+#games{
+    padding : 30px 0;
+}
+
+.games-list{
+    display : grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap : 40px;
+    margin-top : 50px;
+}
+
+.games-list div{
+    background : #262626;
+    padding : 40px;
+    font-size : 13px;
+    font-weight : 300;
+    border-radius : 10px;
+    transition : background 0.5s, transform 0.5s;
+}
+
+.games-list div i{
+    font-size : 50px;
+    margin-bottom : 30px;
+}
+
+.games-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.games-list div a{
+    text-decoration: none;
+    color : #fff;
+    font-size : 12px;
+    margin-top : 20px;
+    display: inline-block;
+}
+
+.games-list div:hover{
+    background : #671212;
+    transform : translateY(-10px);
+}
