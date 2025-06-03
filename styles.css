@@ -1,0 +1,98 @@
+/*
+Reference:
+Title: How to make a portfolio website using HTML CSS JS | Complete responsive website design
+Author:GreatStack
+Date: 2022, July 14
+Availability: https://youtu.be/0YFrGy_mzjY?si=Ov4rLueFSznqQ2Tg
+*/
+
+/* heading section */
+
+/* styling the overall page */
+
+*{
+    margin : 0;
+    padding : 0;
+    font-family :Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing : border-box;
+}
+
+/* styling the body */
+
+body{
+    /* setting the background color to black */
+    background : #080808;
+    color : #fff;
+}
+
+/* styling the heading with an image for the background */
+
+#header{
+    width : 100%;
+    height : 100vh;
+    background-image: url(Images/Reader\(OC\)MikuWallpaper.jpg);
+    background-size : cover;
+    background-position : center;
+}
+
+/* styling the nav buttons */
+
+.container{
+   padding : 10px 10%; 
+}
+
+/* styling the nav buttons away from logo and onto right side */
+
+nav{
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width : 140px;
+}
+
+nav ul li{
+    display : inline-block;
+    list-style: none;
+    margin : 10px 20px;
+}
+
+nav ul li a{
+    color : #ffffff;
+    text-decoration: none;
+    font-size : 18px;
+    position : relative;
+}
+nav ul li a::after{
+    content : '';
+    width : 0;
+    height : 3px;
+    background : #bb1e1e;
+    position : absolute;
+    left : 0;
+    bottom : -6px;
+    transition : 0.5s;
+}
+nav ul li a:hover::after{
+    width : 100%;
+}
+
+.header-text{
+    margin-top: 5%;
+    font-size : 30px;
+}
+
+.header-text h1{
+    font-size : 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color : #bb1e1e;
+}
+
+/* about section */
+

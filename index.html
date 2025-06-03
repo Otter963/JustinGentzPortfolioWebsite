@@ -1,16 +1,59 @@
+<!--
+Reference:
+Title: How to make a portfolio website using HTML CSS JS | Complete responsive website design
+Author:GreatStack
+Date: 2022, July 14
+Availability: https://youtu.be/0YFrGy_mzjY?si=Ov4rLueFSznqQ2Tg
+-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <title>Justin Gentz Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <p>I have peen</p>
+        <!-- Keeping everything as the header to the top -->
+        <!-- The header section -->
+        <div id="header">
+            <div class="container">
+                <!-- The navigation buttons to head to specific parts of the page -->
+                <nav>
+                    <img src="Images/Otter963LogoBigger.jpg" class = "logo">
+                    <ul>
+                        <li><a href = "#">Home</a></li>
+                        <li><a href = "#">About</a></li>
+                        <li><a href = "#">Games</a></li>
+                        <li><a href = "#">Portfolio</a></li>
+                        <li><a href = "#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                   <p>Game Designer/Producer</p>
+                   <h1>Hi, I'm <span>Justin Gentz</span><br>(Otter963) from<br>South Africa</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- The about me section -->
+
+        <div id = "about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src = "Images/OtterFursonaDrawingPFP.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About me</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <script src="" async defer></script>
+        <script src="script.js" async defer></script>
     </body>
 </html>
