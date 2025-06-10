@@ -25,13 +25,15 @@ Availability: https://youtu.be/0YFrGy_mzjY?si=Ov4rLueFSznqQ2Tg
                 <!-- The navigation buttons to head to specific parts of the page -->
                 <nav>
                     <img src="Images/Otter963LogoBigger.jpg" class = "logo">
-                    <ul>
-                        <li><a href = "#">Home</a></li>
-                        <li><a href = "#">About</a></li>
-                        <li><a href = "#">Games</a></li>
-                        <li><a href = "#">Portfolio</a></li>
-                        <li><a href = "#">Contact</a></li>
+                    <ul id="sidemenu">
+                        <li><a href = "#header">Home</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#games">Games</a></li>
+                        <li><a href = "#portfolio">Portfolio</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                    <p>Game Designer/Producer</p>
@@ -96,21 +98,95 @@ Availability: https://youtu.be/0YFrGy_mzjY?si=Ov4rLueFSznqQ2Tg
                         <i class="fa-solid fa-ghost"></i>
                         <h2>Pacmoon</h2>
                         <p>A game that is like Pac-Man...but he has a gun</p>
-                        <a href = "#">Learn more</a>
+                        <a href = "#">Learn more</a><!-- Link to Itch page -->
                     </div>
                     <div>
                         <i class="fa-solid fa-book"></i>
                         <h2>Hidden Catch</h2>
                         <p>A game where you collect books in order to find out the story</p>
-                        <a href = "#">Learn more</a>
+                        <a href = "#">Learn more</a><!-- Link to Itch page -->
                     </div>
                     <div>
                         <i class="fa-solid fa-briefcase"></i>
                         <h2>Dilemmas</h2>
                         <p>A game where you solve dilemmas inspired by "The Stanley Parable"</p>
-                        <a href = "#">Learn more</a>
+                        <a href = "#">Learn more</a><!-- Link to Itch page -->
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Portfolio section -->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My artwork</h1>
+                <div class="art-list">
+                    <div class="work">
+                        <img src="Images/Fade fanart.jpg">
+                        <div class="layer">
+                            <h3>Valorant Fanart</h3>
+                            <p>This is a fan art work I did of the character Fade during my first year
+                                 in my bachelor's degree course</p>
+                            <!-- Search for a link icon on Fontawesome to import to import into this a tag -->
+                            <a href="#"><i class="fa-solid fa-link"></i></a><!-- Link to Artstation -->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/TokyoGhoulWaterColoringUpdated.jpg">
+                        <div class="layer">
+                            <h3>Tokyo Ghoul Fanart</h3>
+                            <p>This is a fan art work I did of Tokyo Ghoul during my first year 
+                                in my bachelor's degree course</p>
+                            <!-- Search for a link icon on Fontawesome to import to import into this a tag -->
+                            <a href="#"><i class="fa-solid fa-link"></i></a><!-- Link to Artstation -->
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="Images/PersonaPiccadillyFinished.jpg">
+                        <div class="layer">
+                            <h3>Piccadilly Persona 5 style</h3>
+                            <p>I wanted to make a Persona 5 related thing, and London's Piccadilly Circus
+                                 came to mind</p>
+                            <!-- Search for a link icon on Fontawesome to import to import into this a tag -->
+                            <a href="#"><i class="fa-solid fa-link"></i></a><!-- Link to Artstation -->
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class = "btn">See more</a>
+            </div>
+        </div>
+
+        <!-- Contact form -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>contact@example.com</p>
+                        <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/lilotter963/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-itch-io"></i></a>
+                            <a href="https://x.com/Otter963"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/justin-gentz-358435359/"><i class="fa-brands fa-linkedin"></i></a>
+                            <!-- Can add more for when other socials created -->
+                        </div>
+                        <a href="CVFile/WIL Practice CV.pdf" download class ="btn btn2">Download CV</a><!-- Link CV file here -->
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class = "btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Justin Gentz. Made by Otter963</p>
             </div>
         </div>
 
