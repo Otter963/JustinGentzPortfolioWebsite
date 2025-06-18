@@ -10,10 +10,12 @@ Availability: https://youtu.be/0YFrGy_mzjY?si=Ov4rLueFSznqQ2Tg
 
 /* styling the overall page */
 
+/*Verdana, Geneva, Tahoma, sans-serif*/
+
 *{
     margin : 0;
     padding : 0;
-    font-family :Verdana, Geneva, Tahoma, sans-serif; /* 'Poppins', sans-serif */
+    font-family : Verdana, Geneva, Tahoma, sans-serif; /* 'Poppins', sans-serif */
     box-sizing : border-box;
 }
 
@@ -86,12 +88,12 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: 5%;
+    margin-top: 1%;
     font-size : 30px;
 }
 
 .header-text h1{
-    font-size : 60px;
+    font-size : 20px;
     margin-top: 20px;
 }
 
@@ -128,6 +130,11 @@ nav ul li a:hover::after{
     font-size : 60px;
     font-weight : 600;
     color : #fff;
+}
+
+.selfText{
+    margin-top : 5%;
+    font-size : 18px;
 }
 
 .tab-titles{
@@ -396,10 +403,11 @@ nav .fa-solid{
         background-image : url(Images/Reader\(OC\)MikuWallpaperPhoneScreen.jpg);
     }
     .header-text{
-        margin-top : 100%;
-        font-size : 16px;
+        margin-top : 10%;
+        font-size : 25px;
     }
     .header-text h1{
+        margin-top: 150%;
         font-size : 30px;
     }
     nav .fa-solid{
@@ -455,4 +463,12 @@ nav .fa-solid{
     .copyright{
         font-size : 14px;
     }
+}
+
+/* For the contact form */
+
+#msg{
+    color : #61b752;
+    margin-top: -40px;
+    display : block;
 }

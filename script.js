@@ -30,3 +30,22 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-200px";
 }
+
+//for the contact form spreadsheet
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz8j1WBvwfpRsA9R0ClTcZjCXfYHplk1kZCy16WGIlf9XLqLnI144MrPt-VD990UoO3/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        }, 5000)//after 5 seconds
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
